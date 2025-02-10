@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out this short survey to help us improve our services.</p>
+    
+    <form id="survey-form">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        
+        <label id="number-label" for="number">Age (optional):</label>
+        <input type="number" id="number" name="number" min="18" max="99" placeholder="Enter your age">
+        
+        <label for="dropdown">How did you hear about us?</label>
+        <select id="dropdown" name="source">
+            <option value="">Select an option</option>
+            <option value="friends">Friends</option>
+            <option value="internet">Internet</option>
+            <option value="advertisement">Advertisement</option>
+        </select>
+        
+        <p>Would you recommend us?</p>
+        <label><input type="radio" name="recommend" value="yes"> Yes</label>
+        <label><input type="radio" name="recommend" value="no"> No</label>
+        
+        <p>What features do you like?</p>
+        <label><input type="checkbox" name="features" value="usability"> Usability</label>
+        <label><input type="checkbox" name="features" value="design"> Design</label>
+        <label><input type="checkbox" name="features" value="support"> Support</label>
+        
+        <label for="comments">Additional comments:</label>
+        <textarea id="comments" name="comments" placeholder="Enter your comments here..."></textarea>
+        
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
