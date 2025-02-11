@@ -1,18 +1,14 @@
+
 .wheel {
     border: 2px solid black;
     border-radius: 50%;
-    margin-left: 50px;
-    position: absolute;
     height: 55vw;
     width: 55vw;
     max-width: 500px;
     max-height: 500px;
-    animation-name: wheel;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-  }
-  
+    animation: wheel 10s linear infinite;
+}
+
   .line {
     background-color: black;
     width: 50%;
@@ -22,7 +18,14 @@
     left: 50%;
     transform-origin: 0% 0%;
   }
-  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+    overflow: hidden; /* Prevent scrollbars */
+}
   .line:nth-of-type(2) {
     transform: rotate(60deg);
   }
